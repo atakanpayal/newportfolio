@@ -1,0 +1,91 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-section {
+  background-color: var(--third-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.profile-photo {
+  width: 100%;
+}
+
+.profile-picture {
+  width: 100%;
+  object-fit: cover;
+}
+
+.profile-text .big-text {
+  font-size: 40px;
+  font-weight: 1000;
+  text-decoration: underline;
+  line-height: 50px;
+}
+.profile-text .small-text {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  column-gap: 1px;
+  row-gap: 10px;
+  padding: 20px;
+  background-color: var(--second-color);
+  font-size: 80px;
+  color: var(--fourt-color);
+}
+
+i {
+  background-color: var(--second-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .company-grid {
+    font-size: 90px;
+  }
+  .company-grid {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    row-gap: 30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .company-grid {
+    font-size: 120px;
+    column-gap: 0px;
+  }
+  .profile-text {
+    padding: 50px;
+  }
+  .profile-text .big-text {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .profile-text .small-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .company-grid {
+    font-size: 150px;
+  }
+  .profile-text {
+    padding: 100px 50px 100px 50px;
+  }
+  .profile-text .big-text {
+    font-size: 65px;
+    line-height: 70px;
+  }
+  .profile-text .small-text {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
